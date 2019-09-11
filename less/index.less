@@ -140,11 +140,15 @@ table {
 @black: black;
 @lightgrey: lightgrey;
 @darkgrey: darkgrey;
+@import url('https://fonts.googleapis.com/css?family=Lato|PT+Mono|Roboto&display=swap');
 
-.fontOne {
+.fontOne() {
 	font-family: 'Beth Ellen', cursive;
 }
 
+.fontTwo() {
+	font-family: 'PT Mono', monospace;
+}
 
 
 * {
@@ -156,6 +160,7 @@ body {
 	height: 100%;
 	margin: 0 auto;
 	width: 800px;
+	.fontTwo();
 
 	.textSettings {
 		color: black;
@@ -172,7 +177,7 @@ body {
 		flex-direction: row-reverse;
 		margin: 20px;
 
-		.topNav nav a {
+		nav a {
 			.textSettings();
 		}
 	}
@@ -250,15 +255,40 @@ h6 {
 
 .component {
 	width: 300px;
+
 	body {
 		width: 80%;
 		margin: 0 auto;
 	}
 }
 
-	@media(max-width: 500px) {
-		.topSection{
-		width: 80%;
-		font-size: 3rem;
-		}
+@media(max-width: 500px) {
+	.topNav {
+		display: flex;
+		width: 50%;
 	}
+
+	.topSection,
+	.midSection {
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 1rem;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+	.bottomSection p {
+		width: 58.5%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 1rem;
+		padding-top: 5%;
+		padding-bottom: 5%;
+
+	}
+}

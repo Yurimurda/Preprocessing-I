@@ -127,8 +127,26 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
-.fontOne {
-  font-family: 'Beth Ellen', cursive;
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Mono'), local('PTMono-Regular'), url(https://fonts.gstatic.com/s/ptmono/v7/9oRONYoBnWILk-9AnC8zNg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
 * {
   box-sizing: border-box;
@@ -138,6 +156,7 @@ body {
   height: 100%;
   margin: 0 auto;
   width: 800px;
+  font-family: 'PT Mono', monospace;
 }
 html .textSettings,
 body .textSettings {
@@ -153,8 +172,8 @@ body .topNav {
   flex-direction: row-reverse;
   margin: 20px;
 }
-html .topNav .topNav nav a,
-body .topNav .topNav nav a {
+html .topNav nav a,
+body .topNav nav a {
   color: black;
   text-decoration: none;
   font-size: 1rem;
@@ -228,8 +247,29 @@ h6 {
   margin: 0 auto;
 }
 @media (max-width: 500px) {
-  .topSection {
-    width: 80%;
-    font-size: 3rem;
+  .topNav {
+    display: flex;
+    width: 50%;
+  }
+  .topSection,
+  .midSection {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .bottomSection p {
+    width: 58.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 }
