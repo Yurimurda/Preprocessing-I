@@ -1,1 +1,275 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Mono'), local('PTMono-Regular'), url(https://fonts.gstatic.com/s/ptmono/v7/9oRONYoBnWILk-9AnC8zNg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0 auto;
+  width: 800px;
+  font-family: 'PT Mono', monospace;
+}
+html .textSettings,
+body .textSettings {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: 20px;
+  width: 20%;
+}
+html .topNav,
+body .topNav {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 20px;
+}
+html .topNav nav a,
+body .topNav nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: 20px;
+  width: 20%;
+}
+html .topSection,
+body .topSection {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: lightgrey;
+}
+html .topSection .fox,
+body .topSection .fox {
+  margin: 100px;
+}
+html .topSection .giveBorder,
+body .topSection .giveBorder {
+  border-top: 1px solid darkgrey;
+  padding-top: 40px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+html .topSection .getStarted a,
+body .topSection .getStarted a {
+  color: white;
+  text-decoration: none;
+  background: darkgrey;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 8%;
+}
+html .midSection,
+body .midSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html .midSection .rightSide p,
+body .midSection .rightSide p {
+  border: 1px solid lightgrey;
+  padding: 15px;
+  font-family: 'Beth Ellen', cursive;
+}
+html .bottomSection p,
+body .bottomSection p {
+  border: 1px solid grey;
+  padding: 15px;
+}
+html .bottomSection p .even,
+body .bottomSection p .even {
+  background-color: lightgrey;
+}
+h2 {
+  margin-top: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2rem;
+}
+.component {
+  width: 300px;
+}
+.component body {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .topNav {
+    display: flex;
+    width: 50%;
+  }
+  .topSection,
+  .midSection {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .bottomSection p {
+    width: 58.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
